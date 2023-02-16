@@ -363,8 +363,8 @@ namespace ConsoleApplication1
 
                 bool room = false;// this creates a bool variable called room and sets it to false
                 bool roomCheck = true;// this creates a bool variable called roomCheck and sets it to false
-                String[] fileName = File.ReadAllLines(@"C:\Users\bhaav\OneDrive\Desktop\ics 4U1\Cruise.txt");// creates a string array called file name and reads in the file so it can acess the data located in the file
-                var lines = File.ReadAllLines(@"C:\Users\bhaav\OneDrive\Desktop\ics 4U1\Cruise.txt");// creates a var called lines, this is where the file is read in once again and equals it to lines
+                String[] fileName = File.ReadAllLines(@"C:\Users\bhaav\OneDrive\Desktop\Cruise.txt");// creates a string array called file name and reads in the file so it can acess the data located in the file
+                var lines = File.ReadAllLines(@"C:\Users\bhaav\OneDrive\Desktop\Cruise.txt");// creates a var called lines, this is where the file is read in once again and equals it to lines
                 Console.WriteLine("-----------------------------------------------------------------------------------------------------------------------------");
 
                 Console.WriteLine("These are the available rooms for a " + R_type + ":\n");// this prints out the users selection for the room and tells them that here are the options for your room 
@@ -429,8 +429,8 @@ namespace ConsoleApplication1
             }
             while (Program == false)// this is a while loop that says if Program is fale then it will run through this statement
             {
-                String[] fileName = File.ReadAllLines(@"C:\Users\bhaav\OneDrive\Desktop\ics 4U1\Cruise.txt");//creates a string array called file name and reads in the file so it can acess the data located in the file
-                var lines = File.ReadAllLines(@"C:\Users\bhaav\OneDrive\Desktop\ics 4U1\Cruise.txt");// creates a var called lines, this is where the file is read in once again and equals it to lines
+                String[] fileName = File.ReadAllLines(@"C:\Users\bhaav\OneDrive\Desktop\Cruise.txt");//creates a string array called file name and reads in the file so it can acess the data located in the file
+                var lines = File.ReadAllLines(@"C:\Users\bhaav\OneDrive\Desktop\Cruise.txt");// creates a var called lines, this is where the file is read in once again and equals it to lines
                 Console.Write("Thank You, can you please enter your room number here: ");
                 R_num = Console.ReadLine();// reads in the user entry for the room number
                 Console.WriteLine("");
@@ -468,7 +468,7 @@ namespace ConsoleApplication1
         }
         static void lineChanger(int availability, string suitename, string roomNum, string company, int rndnum)// this is the lineChanger function, the mian point of this function is to change the lines within the file that we are storing our data to, it takes in three strings and two ints, this function checsk what the availibility varible is equal to and goes according to that 
         {
-            string fileNamee = @"C:\Users\bhaav\OneDrive\Desktop\ics 4U1\Cruise.txt";// this intializes the fileName and creates the file path that we will be editing
+            string fileNamee = @"C:\Users\bhaav\OneDrive\Desktop\Cruise.txt";// this intializes the fileName and creates the file path that we will be editing
             string newText = "";// creates a new string avarible called newText and sets it equal to nothing
             if (availability == 1)// this says that if availbity is equal to 1 it will go through this statement
             {
